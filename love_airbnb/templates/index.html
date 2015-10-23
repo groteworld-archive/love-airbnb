@@ -3,7 +3,7 @@
 {% block content %}
 <div class="form col-md-6">
     <form action="{{url_for('create_ad')}}" method="post">
-        <div class="dear"><input class="line-input" name="dear" placeholder="San Francisco" maxlength="25">,</div>
+        <div class="dear">Dear <input class="line-input" name="dear" placeholder="San Francisco" maxlength="20">,</div>
 
         <div class="message"><textarea class="line-input" name="message" placeholder="Thanks for being a real pal!" maxlength="270"></textarea></div>
 

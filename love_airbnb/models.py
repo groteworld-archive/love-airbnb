@@ -3,7 +3,7 @@ from love_airbnb import db
 class Ad(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
-    dear = db.Column(db.Unicode(25))
+    dear = db.Column(db.Unicode(21))
     message = db.Column(db.Unicode(270))
     sender = db.Column(db.Unicode(26))
 

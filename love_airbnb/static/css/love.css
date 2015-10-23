@@ -37,6 +37,8 @@ img {
     top: 0;
 }
 
+.container {margin-bottom: 70px;}
+
 .hero {
     text-align: center;
     padding: 10% 0;
@@ -95,7 +97,7 @@ img {
 textarea {
     resize: none;
     width: 100%;
-    height: 200px;
+    height: 128px;
 }
 
 .back-arrow {

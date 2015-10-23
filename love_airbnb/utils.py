@@ -10,7 +10,7 @@ def generate_ad(ad):
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype(os.path.dirname(os.path.abspath(__file__))+'/static/HelveticaNeue.ttf', 48)
 
-    dear = '{0},'.format(ad.dear)
+    dear = 'Dear {0},'.format(ad.dear)
     message = '{0}'.format(ad.message)
     messages = textwrap.wrap(message, width=27)
 
@@ -22,8 +22,8 @@ def generate_ad(ad):
     draw.text((80, 40), dear, font = font)
     for idx, msg in enumerate(messages):
         draw.text((80, 150+(50*idx)), msg, font = font)
-    draw.text((800-love_w-80, 800-(love_h*2)-30), love, font = font)
-    draw.text((800-sender_w-80, 800-(sender_h)-30), sender, font = font)
+    draw.text((800-love_w-80, 800-(love_h*2)-40), love, font = font)
+    draw.text((800-sender_w-80, 800-(sender_h)-40), sender, font = font)
     del draw
 
     buffer = cStringIO.StringIO()
