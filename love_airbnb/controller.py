@@ -32,3 +32,9 @@ def view_ad(ad_id):
     ad_img = generate_ad(ad)
 
     return render_template('ad.html', ad_img=ad_img)
+
+@app.route('/tableview')
+def table_view():
+    ads = Ad.query.all()
+
+    return render_template('table.html', ads=ads)
