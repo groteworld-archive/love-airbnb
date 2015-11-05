@@ -10,8 +10,8 @@ def generate_ad(ad):
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype(os.path.dirname(os.path.abspath(__file__))+'/static/HelveticaNeue.ttf', 48)
 
-    dear = 'Dear {0},'.format(ad.dear)
-    message = '{0}'.format(ad.message)
+    dear = u'Dear {0},'.format(ad.dear)
+    message = u'{0}'.format(unicode(ad.message))
     messages = textwrap.wrap(message, width=27)
 
     love = 'Love,'

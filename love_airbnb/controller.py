@@ -16,9 +16,9 @@ def not_found():
 def create_ad():
     data = request.form
 
-    dear = str(data['dear']) or 'San Francisco'
-    message = str(data['message']) or 'Thanks for being a real pal!'
-    sender = str(data['sender']) or 'Airbnb'
+    dear = unicode(data['dear']) or 'San Francisco'
+    message = unicode(data['message']) or 'Thanks for being a real pal!'
+    sender = unicode(data['sender']) or 'Airbnb'
 
     ad = Ad(dear, message, sender)
     ad = ad.create()
