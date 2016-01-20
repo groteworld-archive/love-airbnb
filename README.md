@@ -1,5 +1,6 @@
 Love, Airbnb
 ============
+[![Build Status](https://img.shields.io/travis/grotewold/love-airbnb/master.svg)](https://travis-ci.org/grotewold/love-airbnb)
 
 The passive aggressive ad generator.
 
