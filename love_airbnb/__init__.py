@@ -9,4 +9,4 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 
 db = SQLAlchemy(app)
 
-from love_airbnb import controller
+from love_airbnb import controller  # noqa

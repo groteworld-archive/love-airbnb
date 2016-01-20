@@ -1,5 +1,6 @@
 from love_airbnb import db
 
+
 class Ad(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
